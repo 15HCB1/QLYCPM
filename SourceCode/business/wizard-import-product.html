@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Material Bootstrap Wizard by Creative Tim</title>
+    <title>Nhập kho</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon.png" />
@@ -27,11 +27,11 @@
 </head>
 
 <body>
-    <div class="image-container set-full-height" style="background-image: url('../img/background-2.jpg')">
+    <div class="image-container set-full-height" style="background-image: url('../img/background-4.jpg')">
         <!--   Big container   -->
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
+                <div class="col-sm-12">
                     <!--      Wizard container        -->
                     <div class="wizard-container">
                         <div class="card wizard-card" data-color="red" id="wizard">
@@ -39,14 +39,14 @@
                                 <!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
                                 <div class="wizard-header">
                                     <h3 class="wizard-title">
-                                        Xuất kho
+                                        Nhập kho
                                     </h3>
-                                    <h5>Quy trình xuất kho.</h5>
+                                    <h5>Quy trình nhập kho.</h5>
                                 </div>
                                 <div class="wizard-navigation">
                                     <ul>
-                                        <li><a href="#details" data-toggle="tab">Lập phiếu xuất</a></li>
-                                        <li><a href="#captain" data-toggle="tab">Kiểm tra trong kho</a></li>
+                                        <li><a href="#details" data-toggle="tab">Lập phiếu</a></li>
+                                        <li><a href="#captain" data-toggle="tab">Cập nhập giá</a></li>
                                         <li><a href="#description" data-toggle="tab">Xác nhận</a></li>
                                     </ul>
                                 </div>
@@ -59,7 +59,7 @@
                                                         
                                                     </span>
                                                     <div class="form-group label-floating">
-                                                        <label class="control-label">Mã nhân viên</label>
+                                                        <label class="control-label">Tên Garage</label>
                                                         <input name="name" type="text" class="form-control">
                                                     </div>
                                                 </div>
@@ -76,7 +76,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <table class="table table-striped">
@@ -88,6 +87,7 @@
                                                             <th>Hình</th>
                                                             <th>Giá</th>
                                                             <th>Số lượng</th>
+                                                            <th>Chọn</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -100,6 +100,26 @@
                                                             </td>
                                                             <td>2.000.000đ</td>
                                                             <td>10</td>
+                                                            <td>
+                                                                <label>
+                                                                    <input type="checkbox" value="">
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>NT002</td>
+                                                            <td>Súng văn hơi đầu ¾ KAWASAKI KPT-285P</td>
+                                                            <td>
+                                                                <img class="img-circle img-responsive" src="../img/products/001.jpg" alt="..." width="50" height="50">
+                                                            </td>
+                                                            <td>8.504.100đ</td>
+                                                            <td>30</td>
+                                                            <td>
+                                                                <label>
+                                                                    <input type="checkbox" value="">
+                                                                </label>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -117,9 +137,46 @@
                                                             <th>Mã sản phẩm</th>
                                                             <th>Tên sản phẩm</th>
                                                             <th>Hình</th>
+                                                            <th>Giá cũ</th>
+                                                            <th>Giá mới</th>
+                                                            <th>Số lượng cũ</th>
+                                                            <th>Số lượng mới</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>NT001</td>
+                                                            <td>Dàn nóng Ford Transit</td>
+                                                            <td>
+                                                                <img class="img-circle img-responsive" src="../img/products/000.jpg" alt="..." width="50" height="50">
+                                                            </td>
+                                                            <td>2.000.000đ</td>
+                                                            <td>
+                                                                <input type="text">
+                                                            </td>
+                                                            <td>10</td>
+                                                            <td>
+                                                                <input type="text">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="description">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>ID</th>
+                                                            <th>Mã sản phẩm</th>
+                                                            <th>Tên sản phẩm</th>
+                                                            <th>Hình</th>
                                                             <th>Giá</th>
                                                             <th>Số lượng</th>
-                                                            <th>Tình trạng</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -132,51 +189,19 @@
                                                             </td>
                                                             <td>2.000.000đ</td>
                                                             <td>10</td>
-                                                            <td>Còn</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>NT002</td>
+                                                            <td>Súng văn hơi đầu ¾ KAWASAKI KPT-285P</td>
+                                                            <td>
+                                                                <img class="img-circle img-responsive" src="../img/products/001.jpg" alt="..." width="50" height="50">
+                                                            </td>
+                                                            <td>8.504.100đ</td>
+                                                            <td>30</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="description">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Họ tên</label>
-                                                        <p class="description">Nguyễn Văn A</p>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label">Địa chỉ</label>
-                                                        <p class="description">Nguyễn Văn Cừ, Q.5, TP.HCM</p>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label">Email</label>
-                                                        <p class="description">abc@gmail.com</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Mã sản phẩm</label>
-                                                        <p class="description">NS001</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Số lượng</label>
-                                                        <p class="description">1</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Số điện thoại</label>
-                                                        <p class="description">01234567789</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <input type="button" class="btn btn-next btn-fill btn-info btn-wd" name="next" value="Xuất PDF" style=""></input>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
